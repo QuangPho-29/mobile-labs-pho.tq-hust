@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1C1C1C"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="16dp" />
+
+    <!-- Input 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/sourceAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textAlignment="textEnd"
+            android:background="@null"
+            android:maxLines="1"
+            android:fontFamily="sans-serif"
+            />
+
+        <TextView
+            android:id="@+id/sourceSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/sourceCurrencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:popupBackground="#333333"
+        android:paddingTop="8dp"
+        android:textColor="#CCCCCC"
+        android:textAlignment="center" />
+
+    <!-- Input 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="24dp">
+
+        <EditText
+            android:id="@+id/targetAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textAlignment="textEnd"
+            android:background="@null"
+            android:maxLines="1"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/targetSymbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="€"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:paddingStart="8dp"
+            android:fontFamily="sans-serif-light" />
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/targetCurrencySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:popupBackground="#333333"
+        android:paddingTop="8dp"
+        android:textColor="#CCCCCC"
+        android:textAlignment="center"/>
+
+    <!-- Tỷ giá hối đoái và thời gian cập nhật -->
+    <TextView
+        android:id="@+id/exchangeRateInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:text="1 USD = 0.9241 EUR"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/updateInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Đã cập nhật 28/10/2024 9:44 CH"
+        android:textColor="#CCCCCC"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        android:paddingTop="4dp" />
+
+</LinearLayout>
