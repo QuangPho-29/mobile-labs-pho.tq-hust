@@ -103,18 +103,6 @@
         android:textColor="#CCCCCC"
         android:textAlignment="center"/>
 
-    <!-- Tỷ giá hối đoái và thời gian cập nhật -->
-    <TextView
-        android:id="@+id/exchangeRateInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="16dp"
-        android:text="1 USD = 0.9241 EUR"
-        android:textColor="#CCCCCC"
-        android:textSize="14sp"
-        android:textAlignment="center" />
-
     <TextView
         android:id="@+id/updateInfo"
         android:layout_width="wrap_content"
