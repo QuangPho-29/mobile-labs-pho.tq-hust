@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Gmail-Clone</string>
+    <string name="avatar">Avatar</string>
+    <string name="star_icon">Important Star</string>
+</resources>
