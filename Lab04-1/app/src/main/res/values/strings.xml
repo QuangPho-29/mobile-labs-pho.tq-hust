@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Input-Form</string>
+    <string name="warning">Vui lòng nhập số nguyên dương!</string>
+</resources>
