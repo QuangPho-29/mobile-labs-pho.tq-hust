@@ -78,7 +78,11 @@ class MainActivity : AppCompatActivity() {
         // Lắng nghe sự kiện thay đổi nội dung trong sourceAmount
         sourceAmount.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                if (isSourceSelected) calculateConversion()
+                if (isSourceSelected) {
+                    if(s.isNullOrEmpty()) {
+                        targetAmount.setText("0.0")
+                    } else calculateConversion()
+                }
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
@@ -88,7 +92,11 @@ class MainActivity : AppCompatActivity() {
         // Lắng nghe sự kiện thay đổi nội dung trong targetAmount
         targetAmount.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
-                if (!isSourceSelected) calculateConversion()
+                if (!isSourceSelected) {
+                    if(s.isNullOrEmpty()) {
+                        sourceAmount.setText("0.0")
+                    } else calculateConversion()
+                }
             }
 
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
