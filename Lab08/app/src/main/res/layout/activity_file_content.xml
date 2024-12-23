@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Thêm Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Nội dung tệp"
+        android:background="?android:attr/colorPrimary"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+    <!-- Hiển thị nội dung file -->
+    <TextView
+        android:id="@+id/fileContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"
+        android:scrollbars="vertical" />
+</LinearLayout>
